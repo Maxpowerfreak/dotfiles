@@ -104,4 +104,8 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # ~/.zshrc
 
+# Uses starship with ZSH.
 eval "$(starship init zsh)"
+
+# Uses the 1Password SSH Agent.
+export SSH_AUTH_SOCK=~/.1password/agent.sock
