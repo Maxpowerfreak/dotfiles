@@ -1,14 +1,6 @@
 #!/bin/bash 
 
 echo "Checking dependencies..."
-### Verify requirements are installed ###
-## Homebrew
-if command -v brew >/dev/null; then
-    echo "brew is installed"
-else
-    echo "Error: brew is not installed. Please install Homebrew (https://brew.sh/) first."
-    exit 1
-fi
 
 ## Git
 if command -v git >/dev/null; then
@@ -35,13 +27,6 @@ fi
 
 echo "dependencies checked"
 
-### Install prequisites ###
-echo "installing prequisites"
-
-# fzf and bat
-brew install fzf bat
-
-echo "done installing prequisites"
 
 ### Install zsh plugins ###
 echo "installing zsh plugins"

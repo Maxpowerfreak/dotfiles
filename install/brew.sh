@@ -9,6 +9,7 @@ brew upgrade
 app = (
     bat
     fzf
+    direnv
 )
 
 brew install "${app[@]}"
