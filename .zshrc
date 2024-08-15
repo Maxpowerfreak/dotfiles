@@ -109,3 +109,6 @@ eval "$(starship init zsh)"
 
 # direnv hook
 eval "$(direnv hook zsh)"
+
+# load extra commands if file exists
+[ -f ~/.customrc ] && source ~/.customrc
